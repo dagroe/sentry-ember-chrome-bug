@@ -19,6 +19,21 @@ module.exports = function (environment) {
     },
   };
 
+  ENV['@sentry/ember'] = {
+      sentry: {
+        dsn: 'OUR_DSN',
+        release: 'test-sentry@1234',
+        environment: 'sentry_test',
+        tracesSampleRate: 1.0,
+        debug: true,
+        browserTracingOptions: {
+          tracingOrigins: [
+            'localhost'
+          ],
+        },
+      },
+    };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

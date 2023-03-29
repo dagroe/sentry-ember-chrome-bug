@@ -1,7 +1,5 @@
 {{page-title "SentryChromeBug"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<button {{on "click" this.triggerError}}>trigger error</button>
 
 {{outlet}}
