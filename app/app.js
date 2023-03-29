@@ -13,6 +13,7 @@ Sentry.init({
       // Additional SDK configuration goes in here, for example:
       maskAllText: true,
       blockAllMedia: true,
+      stickySession: false,
     }),
   ]
 });
